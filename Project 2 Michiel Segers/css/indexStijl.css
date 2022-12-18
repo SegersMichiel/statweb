@@ -1,3 +1,13 @@
+.inleiding {
+    background-color:blue;
+    color:white;
+    text-align:center;
+    width: 300px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -8,6 +18,7 @@ ul {
 
 li {
     float: left;
+    width: 25%;
 }
 
 li a {
@@ -22,15 +33,10 @@ li a:hover:not(:active) {
     background-color: white;
 }
 
-div {
-    background-color:blue;
-    color:white;padding:70px;
-    text-align:center;
-    height: 25%;
+.footer {
+    text-align: center;
+    background-color: blue;
+    color: black;
+    padding: 20px;
 }
-
-img {
-    max-width: 100%;
-    height: auto;
-  }
   
