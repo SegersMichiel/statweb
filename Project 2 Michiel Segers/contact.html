@@ -5,48 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio-Contact</title>
-    <link rel="stylesheet" href="css/contactStijl.css">
+
+    <!--css bootstrap-->
+    <link href="css_bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!--css eigen aanpassingen-->
+    <link href="css_eigen_aanpassingen/contactStijl.css" rel="stylesheet">
+
 </head>
 <body>
+    <!--Afbeelding contactpagina-->
+    <figure>
+        <img class= "col-auto" src="images/afbeelding contact page.jpg" class="img-fluid" alt="afbeelding contact pagina">
+    </figure>
+    
 
-<div>
-    <h1>Contact</h1>
-</div>
+    <!--Navigatiemenu contact page-->
+    <nav class="navbar navbar-expand-lg bg-light">
 
-<!--Navigatiemenu contact page-->
-<ul>
-    <li><a class="active" href="index.html">Home Page</a></li>
-    <li><a href="ervaring.html">Ervaring</a></li>
-    <li><a href="hobby.html">Interesses</a></li>
-    <li><a href="cv.html">Cirriculum Vitae</a></li>
-</ul>
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navigatiemenu:</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+              <a class="nav-link" href="index.html">Home Page</a>
+              <a class="nav-link" href="ervaring.html">Ervaring</a>
+              <a class="nav-link" href="hobby.html">Interesses</a>
+              <a class="nav-link" href="cv.html">Curriculum Vitae</a>
+            </div>
+          </div>
+        </div>
+      </nav>
 
-<!--Foto contactpagina--> 
-<img src="images/afbeelding contact page.jpg" alt="afbeelding contact pagina">
-<hr size="2" color="black">
+<!--Persoonlijke gegevens-->
+<h4>Mijn gegevens:</h4>
 
-<!--Profielfoto contactpagina later toevoegen in cirkelvormige kader!--> 
+<!--Naam & voornaam-->
+<p>Naam & voornaam: Michiel Segers</p>
 
-<!--E-mail--> 
-<a href="mailto:michielsegers85@gmail.com" style="border: 2px solid black;">Email adres</a>
+<!--Studierichting-->
+<p>Huidige studie: graduaat programmeren, Thomas More - Campus Geel</p>
 
 <!--Telefoon-->
-<p style="border: 2px solid black;">Telefoon nummer: 0498/50 86 97</p>
+<p>Telefoon nummer: 0498/50 86 97</p>
 
-<!--LinkedIn-->
-<a style="border: 2px solid black;" href="https://be.linkedin.com/in/michiel-segers-4a0296201" target="_blank">LinkedIn profiel</a>
-<hr size="2" color="black">
+<!--E-mail--> 
+<p>Email adress: michielsegers85@gmail.com</p>
+<a class="btn btn-primary" href="mailto:michielsegers85@gmail.com" role="button">Verstuur een mail</a>
 
+<h4>Wenst u een vraag te stellen?</h4>
 <!--Formulier voor stellen van een vraag over een skill-->
-<div>
-    <label for="naam">Naam en voornaam: <input type="text" id="naam" name="name" required/></label>
-</div>
-<div>
-    <label for="email">Email: <input type="email" id="email" name="email" required/></label>
-</div>
-<div>
-    <label for="skill">Interesse in skill:
-        <select name="skill" id="skill">
+<form class="row gy-2 gx-3 align-items-center">
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Naam & voornaam:</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Jan Janssens" required>
+      </div>
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email:</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="JanssensJan@example.com" required>
+      </div>
+    </div>
+    <div class="col-auto">
+      <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+      <select class="form-select" id="autoSizingSelect">
+        <option selected>Waarover gaat uw vraag?</option>
             <option value="html">HTML</option>
             <option value="css">CSS</option>
             <option value="bootstrap">Bootstrap</option>
@@ -55,21 +80,25 @@
             <option value="elektriciteit">Elektriciteit</option>
             <option value="mechanica">Mechanica</option>
             <option value="bewerkingstechnieken">Bewerkingstechnieken</option>
-            <option value="brand en inbraakbeveiliging">Brand en inbraakbeveiliging</option>           
-        </select>
-    </label>
-</div>
-<div>
-    <label for="vraag">Vraag: <textarea name="vraag" id="vraag" cols="30" rows="10"></textarea></label>
-</div>
-<div>
-    <input type="submit" value="Vraag versturen"/>
-</div>
+            <option value="brand en inbraakbeveiliging">Brand en inbraakbeveiliging</option>
+      </select>
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Vraag:</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary">Vraag versturen</button>
+    </div>
+</form>
 
 <footer>
     <p>&copy; 2022 - Michiel Segers</p>
     <a href="https://be.linkedin.com/in/michiel-segers-4a0296201" target="_blank">LinkedIn profiel</a>
 </footer>
+
+<!--javascript bootstrap-->
+<script src="js/bootstrap.bundle.min.js "></script>
 
 </body>
 </html>

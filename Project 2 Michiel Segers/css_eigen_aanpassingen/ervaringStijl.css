@@ -4,7 +4,7 @@ div {
     text-align:center;
 }
 
-ul {
+nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -27,6 +27,14 @@ li a {
 
 li a:hover:not(:active) {
     background-color: white;
+}
+
+figure{
+    border: 2px solid black;
+}
+
+p{
+    border: solid black;
 }
 
 footer {

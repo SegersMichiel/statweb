@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio-CV</title>
+    <!--css bootstrap-->
+    <link href="css_bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!--css eigen aanpassingen-->
     <link rel="stylesheet" href="css/cvStijl.css">
 </head>
 <body>
@@ -15,12 +18,23 @@
 </div>
 
 <!--Navigatiemenu Cirriculum Vitae page-->
-<ul>
-    <li><a class="active" href="index.html">Home Page</a></li>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="hobby.html">Interesses</a></li>
-    <li><a href="ervaring.html">Ervaring</a></li>
-</ul>
+<nav class="navbar navbar-expand-lg bg-light">
+
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navigatiemenu</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="index.html">Home page</a>
+          <a class="nav-link" href="contact.html">Contact</a>
+          <a class="nav-link" href="hobby.html">Interesses</a>
+          <a class="nav-link" href="ervaring.html">Ervaring</a>
+        </div>
+      </div>
+    </div>
+  </nav>
 
 
 <!--CV in afbeeldingformaat-->
@@ -40,6 +54,9 @@ Bij communicatie kunt u korte informatie over mijn eindwerk uit de middelbare sc
     <p>&copy; 2022 - Michiel Segers</p>
     <a href="https://be.linkedin.com/in/michiel-segers-4a0296201" target="_blank">LinkedIn profiel</a>
 </footer>
+
+<!--javascript bootstrap-->
+<script src="js/bootstrap.bundle.min.js "></script>
 
 </body>
 </html>
