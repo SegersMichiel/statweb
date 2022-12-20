@@ -1,0 +1,18 @@
+header {
+    background-color:#0d30a3cb;
+    color:black;padding:70px;
+    text-align:center;
+}
+
+.navbar {
+    background-color: #1a3b5c !important;
+  }
+
+
+footer {
+    text-align: center;
+    background-color:#0d30a3cb;
+    color: black;
+    padding: 20px;
+}
+
