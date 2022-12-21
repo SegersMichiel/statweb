@@ -5,9 +5,24 @@ header {
 }
 
 .navbar {
-    background-color: #1a3b5c !important;
+    background-color: #1a3b5c!important;
   }
 
+.col-12 {
+    padding: 20px;
+}
+
+
+form{
+    width:"50%";
+ 
+   
+}
+
+figure {
+    max-width: 100%;
+    height: auto;
+}
 
 footer {
     text-align: center;
@@ -15,4 +30,5 @@ footer {
     color: black;
     padding: 20px;
 }
+
   

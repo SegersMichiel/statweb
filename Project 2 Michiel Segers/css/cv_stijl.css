@@ -8,6 +8,13 @@ header {
     background-color: #1a3b5c !important;
   }
 
+ul {
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+}
 
 footer {
     text-align: center;
@@ -15,4 +22,6 @@ footer {
     color: black;
     padding: 20px;
 }
+
+
 

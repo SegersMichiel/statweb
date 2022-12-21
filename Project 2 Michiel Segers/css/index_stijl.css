@@ -1,24 +1,15 @@
-header {
+.jumbotron {
     background-color:#0d30a3cb;
     color:black;padding:70px;
     text-align:center;
+    background-image: url(images/afbeeldingcontacrpage.jpg)
+ 
 }
 
 .navbar {
-    background-color: #1a3b5c!important;
+    background-color: #1a3b5c !important;
   }
 
-
-
-form{
-    width: 25%;  
-    align-items: center !important; 
-}
-
-figure {
-    max-width: 100%;
-    height: auto;
-}
 
 footer {
     text-align: center;
@@ -26,5 +17,4 @@ footer {
     color: black;
     padding: 20px;
 }
-
   
